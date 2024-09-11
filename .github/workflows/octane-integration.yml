@@ -27,14 +27,14 @@ jobs:
         # Config parameters for the integration
         with:
           # ALM Octane connection data
-          octaneUrl: 'https://laura-2.almoctane.com'
+          octaneUrl: 'http://puevm0713.swinfra.net:8080'
           #octaneUrl: 'http://localhost:8080/dev'
           octaneSharedSpace: 1001
           octaneWorkspace: 1002
-          octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID}}
-          #octaneClientId: 'GitHubActions_8elwxww93lvgyavykq4evxm29'
-          #octaneClientSecret: '-118191212139244116175117Y'
-          octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET}}
+          #octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID}}
+          octaneClientId: 'actions_gnjwe51mx2d96a3dpdx6pz673'
+          octaneClientSecret: '=496317323622121420426E'
+          #octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET}}
           # Automatically provided GitHub token
           githubToken: ${{secrets.GITHUB_TOKEN}}
           # The url that the CI Server in ALM Octane will point to (own)
